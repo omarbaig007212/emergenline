@@ -2,7 +2,7 @@
 class DBConnect
 {
 
-    private $server = "mysql:host=remotemysql.com";
+    private $server = "remotemysql.com";
     private $dbname="dZlqhGsQp";
 
     private $user = "dZlqhGsQp";
