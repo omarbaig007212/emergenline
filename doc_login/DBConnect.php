@@ -2,19 +2,19 @@
 class DBConnect
 {
 
-    private $server = "remotemysql.com";
-    private $dbname="dZlqhGsQp";
+    public $server = "mysql:host=remotemysql.com";
+    public $dbname="dZlqhGsQp";
 
-    private $user = "dZlqhGsQp";
+    public $user = "dZlqhGsQp";
 
-    private $pass = "iWJZMyqgQm";
+    public $pass = "iWJZMyqgQm";
 
-    private $options = array(
+    public $options = array(
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
     );
 
-    protected $con;
+    public $con;
 
     /* Function for opening connection */
     public function openConnection()
