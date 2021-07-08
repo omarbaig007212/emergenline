@@ -93,7 +93,8 @@ INSERT INTO `patient_registration` (`patient_name`, `gender`, `mobile_number`, `
 -- Table structure for table `tbl_registered_users`
 --
 
-CREATE TABLE IF NOT EXISTS `tbl_registered_users` (
+
+CREATE TABLE `tbl_registered_users` (
   `id` int(10) NOT NULL,
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
@@ -101,14 +102,24 @@ CREATE TABLE IF NOT EXISTS `tbl_registered_users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tbl_registered_users`
+-- Indexes for dumped tables
 --
 
-INSERT INTO `tbl_registered_users` (`id`, `name`, `email`, `password`) VALUES
-(0, 'fox', '1hk18cs082@hkbk.edu.in', '50263dc02cca01353a2668706a21bf1c'),
-(0, 'espn', 'pcmobgamer181@gmail.com', '89e6d2b383471fc370d828e552c19e65'),
-(0, 'test', 'new@gmail.com', '22af645d1859cb5ca6da0c484f1f37ea'),
-(0, 'Sudeep', '1hk18is091@hkbk.edu.in', '4051918ba5dd57f98cbfc4847a5da354');
+--
+-- Indexes for table `tbl_registered_users`
+--
+ALTER TABLE `tbl_registered_users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tbl_registered_users`
+--
+ALTER TABLE `tbl_registered_users`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
