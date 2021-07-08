@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("http://remotemysql.com/", "dZlqhGsQpi","iWJZMyqgQm","dZlqhGsQpi");
+$con=mysqli_connect("remotemysql.com", "dZlqhGsQpi","iWJZMyqgQm","dZlqhGsQpi");
 
 if(isset($_POST['pat_submit']))
 {
