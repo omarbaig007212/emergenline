@@ -63,7 +63,7 @@ class TableRows extends RecursiveIteratorIterator {
 }
 
 
-$servername = "http://remotemysql.com/";
+$servername = "remotemysql.com";
 $username = "dZlqhGsQpi";
 $password = "iWJZMyqgQm";
 $dbname = "dZlqhGsQpi";
